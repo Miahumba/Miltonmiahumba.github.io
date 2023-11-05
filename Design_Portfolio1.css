@@ -1,0 +1,70 @@
+.conteneur
+{
+background-color: black;
+height: 400px;
+width: 800px;
+display: grid;
+grid-template-columns: 270px 800px;
+}
+.pgauche
+{
+background-color: rgb(227, 227, 239);
+overflow-y: scroll;
+
+}
+.profil
+{
+background-repeat: no-repeat;
+height: 100px;
+width: 150px;
+position: relative;
+left: 50px;
+top: 20px;
+border-radius: 90px;
+}
+h3
+{
+    position: relative;
+    top: 10px;
+    text-align: center;
+}
+.col,.col2
+{
+    color: dodgerblue;
+}
+.pdroite
+{
+    background-color: brown;
+}
+@media (max-width:600px)
+{
+    .conteneur
+    {
+        grid-template-columns: 1fr;
+    }
+    .pgauche
+    {
+        height: 300px;
+        overflow-y: initial;
+
+    }
+    h3
+    {
+        position: relative;
+        left: 60px;
+        text-align: left;
+
+    }
+     .Travail,.Specialite
+        {
+            position: relative;
+            left: 250px;
+
+        }
+    .pdroite
+    {
+      height: 300px;
+
+    }
+
+}
